@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: #bee4e7;
+  color: #2f2989;
+}
+
+.inicio h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3em;
+  color: #0b522a;
+  text-shadow: 2px 2px 5px rgba(167, 157, 255, 0.4);
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+}
+
+.tarjeta {
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta img {
+  border: 3px solid #a79dff;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(47, 41, 137, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.targeta p {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #0b522a;
+}
+
+.targeta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(11, 82, 42, 0.4);
+}
+
+.carta {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.carta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 240, 245, 0.7);
+  backdrop-filter: blur(1px);
+}
+
+.nota {
+  position: relative;
+  max-width: 800px;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px 40px;
+  border-radius: 15px;
+  border: 2px solid #a79dff;
+  box-shadow: 0 8px 25px rgba(116, 192, 205, 0.4);
+  color: #2f2989;
+  text-align: center;
+}
+
+.nota h2 {
+  font-size: 2.2em;
+  color: #0b522a;
+}
+
+.nota p {
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+
+.volver {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.2em;
+  background-color: #74c0cd;
+  color: #0b522a;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.volver:hover {
+  background-color: #a79dff;
+  color: #ffffff;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+body.fade-in {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.album-body {
+  background-color: #BEE4E7;
+  text-align: center;
+  color: #2F2989;
+  padding: 40px;
+}
+
+.album-body h1 {
+  font-size: 2.8em;
+  color: #0B522A;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 5px rgba(167, 157, 255, 0.4);
+}
+
+.galeria-recuerdos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.galeria-recuerdos img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #A79DFF;
+  box-shadow: 0 6px 15px rgba(47, 41, 137, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria-recuerdos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(11, 82, 42, 0.4);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
+  border: 4px solid #74C0CD;
+  box-shadow: 0 0 25px rgba(167, 157, 255, 0.8);
+  animation: zoomIn 0.4s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 💖 Sección musical */
+.musica-romantica {
+  margin: 30px auto 50px;
+  text-align: center;
+  background-color: rgba(174, 218, 226, 0.3);
+  border: 2px solid #A79DFF;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 700px;
+  box-shadow: 0 4px 15px rgba(47, 41, 137, 0.2);
+}
+
+.musica-romantica h3 {
+  color: #0B522A;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+}
+
+.botones-musica a {
+  display: block;
+  margin: 8px 0;
+  padding: 10px 15px;
+  background-color: #74C0CD;
+  color: #0B522A;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botones-musica a:hover {
+  background-color: #A79DFF;
+  color: white;
+}
+
+.nota-musica {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #2F2989;
+  opacity: 0.8;
+}

@@ -1,0 +1,10 @@
+<!-- 💕 Sección musical -->
+<section class="musica-romantica">
+  <h3>💞 Acompaña estos recuerdos con música 💞</h3>
+  <div class="botones-musica">
+    <a href="https://www.youtube.com/watch?v=4Tr0otuiQuU" target="_blank">🎹 “River Flows in You” – Yiruma</a>
+    <a href="https://www.youtube.com/watch?v=7maJOI3QMu0" target="_blank">🎻 “Comptine d’un autre été” – Yann Tiersen</a>
+    <a href="https://www.youtube.com/watch?v=DsVxgOjNLmE" target="_blank">🎸 “Romantic Guitar” – Relaxing Instrumental</a>
+  </div>
+  <p class="nota-musica">Haz clic en una canción, déjala sonar en YouTube y vuelve aquí 💫</p>
+</section>
